@@ -24,3 +24,6 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 # github-oauth2-demo-front-end
 github oauth2 demo front-end
+
+# 在线demo
+[Demo](http://81.68.131.249:8080/)
