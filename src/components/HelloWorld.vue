@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <h2>I Am {{name}}</h2>
+    <img v-bind:src="avatarUrl"/>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -35,6 +37,17 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+ data () {
+    return {
+      name: "?",
+      avatarUrl:""
+    }
+  },
+  mounted: function() {
+    this.name = localStorage.getItem("name")
+    this.avatarUrl = localStorage.getItem("avatar_url")
+    console.log("asdf")
   }
 }
 </script>
